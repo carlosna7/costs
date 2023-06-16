@@ -3,19 +3,35 @@
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Produção"
     },
     {
       "id": 2,
-      "name": "Desenvolvimentos"
+      "name": "Administração"
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "Manutenção"
     },
     {
       "id": 4,
-      "name": "Planejamento"
+      "name": "Vendas"
+    },
+    {
+      "id": 5,
+      "name": "Qualidade"
+    },
+    {
+      "id": 6,
+      "name": "Laboratório"
+    },
+    {
+      "id": 7,
+      "name": "Almoxarifado"
+    },
+    {
+      "id": 8,
+      "name": "Expedição"
     }
   ]
 }

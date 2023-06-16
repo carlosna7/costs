@@ -16,16 +16,16 @@ export function Navbar() {
 
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link to="/" >Home</Link>
+                        <Link to="/" >Inicio</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/projects" >Projects</Link>
+                        <Link to="/projects" >Projetos</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/company" >Company</Link>
+                        <Link to="/company" >Empresa</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/contact" >Contact</Link>
+                        <Link to="/contact" >Contatos</Link>
                     </li>
                 </ul>
             </Container>
