@@ -1,7 +1,10 @@
 export function Company() {
 
     return (
-        <h1>Company</h1>
+        <div>
+            <h1>ORcon</h1>
+            <p>Or "Our" (nosso) e con "Contratation" (contratação). ou ORganizando CONtratações</p>
+        </div>
     )
 
 }

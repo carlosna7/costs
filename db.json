@@ -1,19 +1,19 @@
 {
   "projects": [
     {
-      "name": "Teste 1",
-      "budget": "1",
+      "name": "Teste Projeto 1",
+      "budget": "100.00",
       "category": {
-        "id": "1",
-        "name": "Produção"
+        "id": "8",
+        "name": "Expedição"
       },
       "cost": 0,
       "service": [],
       "id": 1
     },
     {
-      "name": "Teste 2",
-      "budget": "2",
+      "name": "Teste Projeto 2",
+      "budget": "200.00",
       "category": {
         "id": "2",
         "name": "Administração"
@@ -32,6 +32,17 @@
       "cost": 0,
       "service": [],
       "id": 3
+    },
+    {
+      "name": "Teste 4",
+      "budget": "4",
+      "category": {
+        "id": "6",
+        "name": "Laboratório"
+      },
+      "cost": 0,
+      "service": [],
+      "id": 4
     }
   ],
   "categories": [
