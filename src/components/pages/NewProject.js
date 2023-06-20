@@ -10,7 +10,7 @@ export function NewProject() {
 
         //initialize cost and services
         project.cost = 0
-        project.service = []
+        project.services = []
 
         fetch("http://localhost:5000/projects", {
             method: "POST",
