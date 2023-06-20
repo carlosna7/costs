@@ -1,6 +1,6 @@
 import styles from "./Project.module.css"
 
-import { parse, v4 as uuidv4 } from "uuid"
+import { v4 as uuidv4 } from "uuid"
 
 import {useParams} from "react-router-dom"
 import { useState,useEffect } from "react"
@@ -10,6 +10,7 @@ import { Container } from "../layout/Container"
 import { ProjectForm } from "../projects/ProjectForm"
 import { ServiceForm } from "../service/ServiceForm"
 import { Message } from "../layout/Message"
+import { ServiceCard } from "../service/ServiceCard"
 
 export function Project() {
 
@@ -57,6 +58,7 @@ export function Project() {
             .then((resp) => resp.json()) 
             .then((data) => {
                 setProject(data)
+                setServices(data.services)
                 setShowProjectForm(false)
                 setMessage("projeto atualizado!")
                 setType("success")
@@ -93,8 +95,33 @@ export function Project() {
         })
             .then((resp) => resp.json()) 
             .then((data) => {
-                //exibir serviços
-                console.log(data)
+                setShowServiceForm(false)
+            })
+            .catch((err) => console.log(err))
+    }
+
+    function removeService(id, cost) {
+
+        const servicesUpdate = project.services.filter(
+            (service) => service.id !== id
+        )
+
+        const projectUpdated = project
+        projectUpdated.services = servicesUpdate
+        projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify(project),
+        })
+            .then((resp) => resp.json()) 
+            .then((data) => {
+                setProject(projectUpdated)
+                setServices(servicesUpdate)
+                setMessage("Serviço removido com sucesso!")
             })
             .catch((err) => console.log(err))
     }
@@ -154,7 +181,18 @@ export function Project() {
                     </div>
                     <h2>Serviços</h2>
                     <Container customClass="start" >
-                        {services.length > 0}
+                        {services.length > 0 &&
+                            services.map((service) => (
+                                <ServiceCard 
+                                id={service.id}
+                                name={service.name}
+                                cost={service.cost}
+                                description={service.description}
+                                key={service.id}
+                                handleRemove={removeService}
+                                />
+                            ))
+                        }
                         {services.length === 0 && <p>não há serviços cadastrados</p>}
                     </Container>
                 </Container>

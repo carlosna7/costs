@@ -7,8 +7,15 @@
         "id": "8",
         "name": "Expedição"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 10,
+      "services": [
+        {
+          "name": "t1",
+          "cost": "10",
+          "description": "testando",
+          "id": "dd3bd8b3-1fc2-43b6-994d-bd00df6be2fb"
+        }
+      ],
       "id": 1
     },
     {
@@ -23,22 +30,29 @@
       "id": 2
     },
     {
-      "name": "teste 3",
-      "budget": "3",
+      "name": "Teste projeto 3",
+      "budget": "300.00",
       "category": {
         "id": "3",
         "name": "Manutenção"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 50,
+      "services": [
+        {
+          "name": "t3",
+          "cost": "50",
+          "description": "Testando",
+          "id": "76492b86-2ae2-4a25-a2b4-2cdbe977a3b6"
+        }
+      ],
       "id": 3
     },
     {
       "name": "Teste 4",
       "budget": "400.00",
       "category": {
-        "id": "6",
-        "name": "Laboratório"
+        "id": "1",
+        "name": "Produção"
       },
       "cost": 400,
       "services": [
@@ -85,6 +99,24 @@
       "cost": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "Teste projeto 6",
+      "budget": "600",
+      "category": {
+        "id": "4",
+        "name": "Vendas"
+      },
+      "cost": 500,
+      "services": [
+        {
+          "name": "t6",
+          "cost": "500",
+          "description": "testando",
+          "id": "e40bf43e-5143-4129-bfee-59b7d1801a16"
+        }
+      ],
+      "id": 6
     }
   ],
   "categories": [
