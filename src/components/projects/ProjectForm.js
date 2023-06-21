@@ -13,7 +13,7 @@ export function ProjectForm({btnText, handleSubmit, projectData}) {
     const [project, setProject] = useState(projectData || {})
 
     useEffect(()=> {
-        fetch("http://localhost:5000/categories", {
+        fetch("https://json-test-flax.vercel.app/categories", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",

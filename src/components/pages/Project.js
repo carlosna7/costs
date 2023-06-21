@@ -24,7 +24,7 @@ export function Project() {
 
     useEffect (() => {
         setTimeout(() => {
-            fetch(`http://localhost:5000/projects/${id}`, {
+            fetch(`https://json-test-flax.vercel.app/projects/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-type": "application/json",
@@ -48,7 +48,7 @@ export function Project() {
             return false
         }
             
-        fetch(`http://localhost:5000/projects/${project.id}`, {
+        fetch(`https://json-test-flax.vercel.app/projects/${project.id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -86,7 +86,7 @@ export function Project() {
         //add service cost to project total cost
         project.cost = newCost
         // update project
-        fetch(`http://localhost:5000/projects/${project.id}`, {
+        fetch(`https://json-test-flax.vercel.app/projects/${project.id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -110,7 +110,7 @@ export function Project() {
         projectUpdated.services = servicesUpdate
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+        fetch(`https://json-test-flax.vercel.app/projects/${projectUpdated.id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
