@@ -1,0 +1,1 @@
+para acessar o banco de dados entre no repositório: 'https://github.com/carlosna7/json-test' e no 'db.json' estão todos os dados iniciais ja cadastrados na aba projetos do site
