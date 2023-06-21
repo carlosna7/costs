@@ -25,14 +25,14 @@ export function ServiceForm({ handleSubmit, btnText, projectData }) {
                 type="text"
                 text="Nome do Serviço"
                 name="name"
-                placeholder="Insirta o nome do serviço"
+                placeholder="Insira o nome do serviço"
                 handleOnChange={handleChange}
             />
             <Input 
                 type="number"
                 text="Custo do Serviço"
                 name="cost"
-                placeholder="Insirta o valor do serviço"
+                placeholder="Insira o valor do serviço"
                 handleOnChange={handleChange}
             />
             <Input 
