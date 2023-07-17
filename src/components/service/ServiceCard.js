@@ -1,3 +1,5 @@
+// card dos serviços incluidos no projetos
+
 import styles from "../projects/ProjectCard.module.css"
 
 import { BsFillTrashFill } from "react-icons/bs"

@@ -1,3 +1,5 @@
+// aba "edição do projeto"
+
 import styles from "./Project.module.css"
 
 import { v4 as uuidv4 } from "uuid"
@@ -150,10 +152,10 @@ export function Project() {
                                     <span>Categoria: </span> {project.category.name}
                                 </p>
                                 <p>
-                                    <span>Total Orçamento: </span> R$ {project.budget}
+                                    <span>Orçamento Total: </span> R$ {project.budget}
                                 </p>
                                 <p>
-                                    <span>Total utilizado: </span> R$ {project.cost}
+                                    <span>Orçamento utilizado: </span> R$ {project.cost}
                                 </p>
                             </div>
                         ) : (

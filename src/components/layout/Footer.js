@@ -19,7 +19,7 @@ export function Footer() {
             </li>
         </ul>
 
-        <p className={styles.copyRight}><span>Costs</span> &copy; 2023</p>
+        <p className={styles.copyRight}><span>Custos</span> &copy; 2023</p>
 
     </footer>
     )

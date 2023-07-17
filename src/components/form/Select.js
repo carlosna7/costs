@@ -1,3 +1,5 @@
+// modelo input type select
+
 import styles from "./Select.module.css"
 
 export function Select({text, name, options, handleOnChange, value}) {

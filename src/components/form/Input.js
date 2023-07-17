@@ -1,3 +1,5 @@
+// modelo input type texto
+
 import styles from "./Input.module.css"
 
 export function Input({type, text, name, placeholder, handleOnChange, value}) {
